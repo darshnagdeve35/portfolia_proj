@@ -1,0 +1,63 @@
+.emoji-search {
+  background-color: #eee;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Search-Bar {
+  margin: 0px;
+  padding: 0px;
+  padding: 15px;
+  box-shadow: 16px 16px 16px #ddd;
+  width: 50%;
+  height: 1rem;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.Search-items {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Search-container {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Search-input {
+  border: none;
+  background-color: transparent;
+  font-size: 1.25rem;
+  width: 95%;
+  margin-left: 10px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 0px;
+}
+
+.Search-input:focus {
+  outline: none;
+}
+
+.Result-item {
+  padding: 10px;
+  height: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 49.4rem;
+}

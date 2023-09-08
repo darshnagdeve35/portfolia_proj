@@ -1,0 +1,121 @@
+/* Styling for the outer container */
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Styling for the form container */
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Styling for the label */
+.todo-label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+  text-align: left;
+}
+
+/* Styling for the input field */
+.todo-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Styling for the submit button */
+.todo-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the list container */
+.todo-list {
+  list-style-type: disc;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Styling for list items */
+.todo-list li {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333; /* Dark text color */
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #999; /* Adjust color for checked items */
+}
+
+.notChecked {
+  position: relative;
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #f0f2f5; /* Same as container background */
+  color: #000; /* Black text color */
+  font-weight: bold;
+  border: 2px solid #000; /* Black border */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  max-width: calc(100%); /* Adjust based on container padding */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.notChecked::before {
+  content: "\f00c"; /* Unicode for checkmark (✓) */
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  font-family: "Font Awesome 5 Free"; /* Assuming you have Font Awesome loaded */
+  font-weight: 900;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.notChecked:hover {
+  transform: scale(1.05); /* Slight scale-up on hover */
+}
+
+.checked.notChecked::before {
+  opacity: 1;
+}
+
+.list-item {
+  text-align: left; /* Align content within the list item to the left */
+  display: flex; /* Use flexbox for alignment control */
+  align-items: center; /* Vertically align items */
+  margin: 5px 0;
+}
