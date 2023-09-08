@@ -30,28 +30,22 @@ List any prerequisites or system requirements here. For example:
    git clone https://github.com/yourusername/your-repo.git
 
 2.Change into the project directory:
-
 ```bash
-  cd your-repo
+cd your-repo
 ```
-
 3.Change into the project directory:
 ```bash
-  npm install
-
+npm install
 ```
-
 4.Install dependencies:
 ```bash
 npm i
-
 ```
-
 5.Start the development server:
 ```bash
- npm run dev
+npm run dev
 ```
-
-
+### Usage
+Open your browser and navigate to http://localhost:3000 to view the application.
 
    
