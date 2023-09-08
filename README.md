@@ -28,3 +28,12 @@ List any prerequisites or system requirements here. For example:
 
    ```bash
    git clone https://github.com/yourusername/your-repo.git
+
+2.Change into the project directory:
+
+```bash
+  cd your-repo
+
+3.
+
+   
