@@ -33,10 +33,7 @@ List any prerequisites or system requirements here. For example:
 ```bash
 cd your-repo
 ```
-3.Change into the project directory:
-```bash
-npm install
-```
+
 4.Install dependencies:
 ```bash
 npm i
